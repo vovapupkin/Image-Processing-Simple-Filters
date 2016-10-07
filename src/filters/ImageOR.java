@@ -1,6 +1,6 @@
 package filters;
 
-import imageProcessing.simpleProcessor.SimpleTwoImageProcessor;
+import baseStructures.simpleProcessor.SimpleTwoImageProcessor;
 import models.MyImage;
 import models.MyRGB;
 
@@ -15,6 +15,7 @@ public class ImageOR extends SimpleTwoImageProcessor {
 
     @Override
     protected int simpleOperation(int destinationRGB, int sourceRGB) {
-        return destinationRGB != 0 || sourceRGB != 0 ? new MyRGB(255, 255, 255).toInteger() : 0;
+        return new MyRGB(destinationRGB).getBrightness() != 0
+                || new MyRGB(sourceRGB).getBrightness() != 0 ? new MyRGB(255, 255, 255).toInteger() : new MyRGB(0, 0, 0).toInteger();
     }
 }

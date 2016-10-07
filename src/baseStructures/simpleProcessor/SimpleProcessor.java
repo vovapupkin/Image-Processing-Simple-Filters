@@ -1,6 +1,6 @@
-package imageProcessing.simpleProcessor;
+package baseStructures.simpleProcessor;
 
-import imageProcessing.Processor;
+import baseStructures.Processor;
 import models.MyImage;
 
 import java.awt.image.BufferedImage;

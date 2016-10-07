@@ -1,12 +1,7 @@
 package filters;
 
-import imageProcessing.Processor;
-import imageProcessing.simpleProcessor.SimpleProcessor;
-import models.MyImage;
+import baseStructures.simpleProcessor.SimpleProcessor;
 import models.MyRGB;
-
-import java.awt.image.BufferedImage;
-import java.util.Arrays;
 
 /**
  * Created by vova on 06-Oct-16.

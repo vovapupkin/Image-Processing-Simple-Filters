@@ -16,6 +16,8 @@ import java.util.Arrays;
  */
 public class Histogram extends JPanel {
 
+    //TODO: refactor class
+
     public Histogram(MyImage image, String color) {
         JFrame frame = new JFrame(color);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -25,7 +27,6 @@ public class Histogram extends JPanel {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-
     private class Graph extends JPanel {
         protected static final int MIN_BAR_WIDTH = 4;
         private Integer[] histogram = new Integer[256];
@@ -35,6 +36,7 @@ public class Histogram extends JPanel {
             BufferedImage bufferedImage = image.getBufferedImage();
             for (int i = 0; i < bufferedImage.getWidth(); i++) {
                 for (int j = 0; j < bufferedImage.getHeight(); j++) {
+                    //TODO: changed it with ENUM
                     switch (color) {
                         case "red":
                             histogram[new MyRGB(bufferedImage.getRGB(i, j)).getRed()]++;

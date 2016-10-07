@@ -1,6 +1,6 @@
 package filters;
 
-import imageProcessing.simpleProcessor.SimpleTwoImageProcessor;
+import baseStructures.simpleProcessor.SimpleTwoImageProcessor;
 import models.MyImage;
 import models.MyRGB;
 

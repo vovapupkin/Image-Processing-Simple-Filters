@@ -1,6 +1,6 @@
 package filters;
 
-import imageProcessing.Processor;
+import baseStructures.Processor;
 import models.MyImage;
 import models.MyRGB;
 

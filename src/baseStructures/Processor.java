@@ -1,4 +1,4 @@
-package imageProcessing;
+package baseStructures;
 
 import models.MyImage;
 
